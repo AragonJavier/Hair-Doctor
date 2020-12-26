@@ -1,0 +1,48 @@
+#header {
+    color: $color-ligth;
+
+    @include hasta(tablet) {
+        background: $color-bg-secod;
+
+    }
+
+    @include desde(tablet) {
+        background: linear-gradient($color-bg-secod 75%,
+            transparent 75%
+            )
+    }
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2em;
+    margin: .5em 0 0;
+    color: $color-ligth;
+    text-align: center;
+
+    span {
+        font-weight: 600;
+        color: $color-letter;
+    }
+
+    @include desde(web) {
+        text-align-last: left;
+        line-height: 1;
+    }
+
+
+}
+
+.subtitle {
+    font-family: $header--font-family;
+    font-weight: 300;
+    opacity: 0.7;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    @include desde(web) {
+        text-align-last: left;
+        line-height: 1;
+    }
+}

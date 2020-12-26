@@ -1,0 +1,16 @@
+#footer {
+    background: $color-bg-secod;
+    color: $color-ligth;
+    font-size: 0.9em;
+    padding: 1em 0;
+
+    @include hasta(tablet){
+        text-align: center;
+
+    }
+}
+
+.creditos {
+    margin-bottom: 0;
+
+}

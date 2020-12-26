@@ -1,0 +1,72 @@
+.banner {
+    margin-top: 1em;
+    position: relative;
+
+    img {
+        width: 960px;
+        height: 380px;
+    }
+}
+
+.copy {
+    margin: 0;
+
+    &__title {
+        color: $color-letter;
+        font-weight: 600;
+        margin: .5em 0 0.2em;
+        text-transform: uppercase;
+
+        span {
+            font-weight: 350;
+            text-transform: none;
+        }
+    }
+
+    &__description {
+        font-size: 0.85em;
+        margin-bottom: 0;
+    }
+
+    &__boton {
+        color: $color-ligth;
+        background: linear-gradient(darken($color-bg-secod, 10%),
+            darken($color-bg-secod, 20%));
+        line-height: 2;
+        display: inline-block;
+        border-radius: 4px;
+        margin: 0.5em 0;
+        padding: 0 1em;
+
+        &:hover {
+            color: $color-letter;
+        }
+    }
+}
+
+@include desde(tablet) {
+    .copy {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        left: 2em;
+        color: $color-bg-secod;
+        text-align: justify;
+        
+        &__title {
+            font-weight: 600;
+            font-size: 2em;
+            font-family: $body--font-family;
+            color: $color-bg-secod;
+            line-height: 1;
+
+            span {
+                font-size: .6em;
+                display: block;
+                line-height: 1;
+            }
+        }
+
+    }
+}
